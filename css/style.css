@@ -2,18 +2,20 @@ body {
     margin: 0;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
     height: 100vh;
+    background-color: lightgrey;
 }
 
 header {
-    padding: 2rem;
     text-align: center;
+    font-size: 20px;
 }
 
 main {
-    height: calc(100vh - 100px);
+    height: calc(110vh - 100px);
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 
 .links {
@@ -36,4 +38,30 @@ main {
 .links a:hover {
     background-color: #111;
     color: white;
+}
+
+.about-me{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 1rem;
+}
+
+.about-me-side{
+    display: flex;
+    flex-direction: row;
+}
+
+.about-me-side p {
+    line-height: 1.8;
+    font-size: 20px;
+    flex: 4;
+    padding-right: 20px;
+}
+
+.about-me-pic{
+    flex: 1;
+    width: 100%;
+    max-width: 300%;
+    height:auto;
+    object-fit:contain;
 }
