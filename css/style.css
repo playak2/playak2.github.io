@@ -21,7 +21,7 @@ main {
 .links {
     display: flex;
     flex-direction: row;
-    gap: 1.5rem;
+    gap: 10rem;
     margin-top: 50px;
     margin-bottom: 50px;
 }
@@ -30,7 +30,7 @@ main {
     font-size: 1.5rem;
     text-decoration: none;
     color: white;
-    padding: 1rem 2.5rem;
+    padding: 1rem 6rem;
     text-align: center;
     border-radius: 8px;
     transition: all 0.2s ease;
@@ -94,11 +94,12 @@ main {
     color: blue;
 }
 
-.footer{
+.footer {
     margin-top: 20px;
     width: 100%;
-    display:flex;
+    display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     background-color: rgb(250, 243, 231);
+    border-top: 5px solid black;
 }
