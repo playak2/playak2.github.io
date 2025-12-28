@@ -81,7 +81,7 @@ nav ul li a:hover{
 }
 
 .about-col-1{
-    flex-basis: 40%
+    flex-basis: 40%;
 }
 
 #about-me-img{
@@ -216,4 +216,15 @@ nav ul li a:hover{
     border-top: 5px solid black;
     padding-top: 30px;
     padding-bottom: 30px;
+}
+
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
