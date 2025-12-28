@@ -1,46 +1,252 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Pallab's Portfolio</title>
-        <link rel="stylesheet" href="css\style.css">
+        <link rel="stylesheet" href="css\styles.css">
     </head>
     <body>
-        <header>
-            <h1>
-                Pallab Layak
-            </h1>
-        </header>
-        <main>
-            <div class="about-me">
-                <h2>
-                    About Me!
-                </h2>
-                <div class="about-me-side">
-                <p>
-                    Hi! I'm Pallab, a Mechanical Engineering graduate from the University of Illinois at Urbana-Champaign.
-                    Over the past three years, I've been deeply involved with the <a href="https://www.illinisolarcar.com/" target="_blank">Illini Solar Car</a> team, where I worked on a wide range of projects and held multiple leadership roles—most notably as Mechanical Lead. 
-                    I've also conducted undergraduate research with the <a href="https://ewoldt.mechanical.illinois.edu/" target="_blank">Ewoldt Research Group</a>, focusing on embedded 3D printing. <br><br>
-                    Through these experiences, I've developed a strong foundation in design, analysis, testing, manufacturing, and assembly. 
-                    I enjoy seeing projects through from concept to completion and have gained a deep appreciation for how mechanical engineering shapes the world around us.<br><br>
-                    My website is still a work in progress, but feel free to explore my resume and portfolio to learn more about the projects I've worked on. 
-                    I'm excited to apply my skills to drive innovation and make a meaningful impact.
-                </p>
-                <img src="images/about-me-2.jpeg" class="about-me-pic">
+        <div id="header">
+            <div class="container">
+                <nav>
+                    <h1>Pallab Layak</h1>
+                    <ul>
+                        <li><a href="#about">Home</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="files\Pallab_Layak_Resume.pdf" target="_blank">Resume</a></li>
+                        <li><a href="files\Pallab_Layak_Portfolio.pdf" target="_blank">Portfolio</a></li>
+                        <li><a href="#footer">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="images\about-me\about-me.JPEG" id="about-me-img">
+                    </div>
+                    <div class="about-col-2">
+                        <h2>
+                            About Me!
+                        </h2>
+                        <p>Hi! I'm Pallab, a Mechanical Engineering graduate from the University of Illinois at Urbana-Champaign.
+                        Over the past three years, I've been deeply involved with the <a href="https://www.illinisolarcar.com/" target="_blank">Illini Solar Car</a> team, where I worked on a wide range of projects and held multiple leadership roles—most notably as Mechanical Lead. 
+                        I've also conducted undergraduate research with the <a href="https://ewoldt.mechanical.illinois.edu/" target="_blank">Ewoldt Research Group</a>, focusing on embedded 3D printing. <br><br>
+                        Through these experiences, I've developed a strong foundation in design, analysis, testing, manufacturing, and assembly. 
+                        I enjoy seeing projects through from concept to completion and have gained a deep appreciation for how mechanical engineering shapes the world around us.<br><br>
+                        My website is still a work in progress, but feel free to explore my resume and portfolio to learn more about the projects I've worked on. 
+                        I'm excited to apply my skills to drive innovation and make a meaningful impact.</p>
+                    </div>
                 </div>
             </div>
-            <img src="images/banner-top.png" class="banner">
-            <div class="links">
-                <a href="files\Pallab_Layak_Resume.pdf" target="_blank">Resume</a>
-                <br>
-                <a href="files\Pallab_Layak_Portfolio.pdf" target="_blank">Engineering Portfolio</a>
-                <br>
-                <a href="https://www.linkedin.com/in/pallab-layak/" target="_blank">LinkedIn</a>   
+        </div>
+        <div id="projects">
+            <div class="container">
+                <h2>Projects</h2>
+                <div class="project-panel">
+                    <div class="project-row">
+                        <div class="project-col-1">
+                            <h3>Rear Suspension Redesign and Fixing</h3>
+                            <h4>Overview:</h4>
+                            <p>Redesign an overbuilt suspension to save mass without sacrificing safety. The previous design was not optimized and used large fasteners that were expensive and made servicing challening.
+                                Additionally, the previous design broke down during the race so we had to come up with a quick solution on-the-fly!
+                            </p>
+                            <h4>Skills Used:</h4>
+                            <p>Hand-calcs (Statics), Python, ANSYS Static Structural, Tolerance Stackup, Lug Analysis, Preload</p>
+                            <h4>Outcome:</h4>
+                            <p>40% weight reduction. Completed on a tight timeline (1 month). Min FoS = 1.28</p>
+                            <br>
+                            <a href="#" class="learn-more">Learn More!</a>
+                        </div>
+                        <div class="project-col-2">
+                            <div class="project-img">
+                                <img src="images/projects/rear-suspension.png">
+                            </div>
+                            <div class="project-img-caption">
+                                <p>
+                                    Render of Redesigned Rear Suspension
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-panel">
+                    <div class="project-row">
+                        <div class="project-col-1">
+                            <h3>Autofeeder Improvement - thyssenkrupp</h3>
+                            <h4>Overview:</h4>
+                            <p>
+                                This was my Senior Capstone Project sponsored by thyssenkrupp. We were asked to improve a section of a cam lobe autofeeder that currently undergoes large amounts of downtime. 
+                                Since the current machine vision system was not very reliable, we proposed four solutions and produced high-fidelity prototypes for each:
+                            </p>
+                                <ul>
+                                    <li>Narrowing conveyor using an industrial vibrator to prevent jamming.</li>
+                                    <li>Roller bearing gripper to mechanically force the lobes into 1 of 2 positions.</li>
+                                    <li>Updated machine vision system.</li>
+                                    <li>Poka yoke to account for any final misalignment.</li>
+                                </ul>
+                            <p>
+                                My contributions focused on the conveyor and gripper systems, as well as creating a high-fidelity test setup for rapid off-site prototyping.
+                            </p>
+                            <h4>Skills Used:</h4>
+                            <p>Hand Calcs (Dynamic Analysis), Fatigue Analysis, ANSYS Modal Analysis, GD&T, RSS Six Sigma Tolerance, Sheet Metal Component Design, Milling, Shop Tools</p>
+                            <h4>Outcome:</h4>
+                            <p>Projected 99% uptime. Reduced cycle time by ~0.5 s. Proposed solutions successfully passed 1000+ tests on high-fidelity prototype. Won 2nd place for best prototype.</p>
+                            <br>
+                            <a href="#" class="learn-more">Learn More!</a>
+                        </div>
+                        <div class="project-col-2">
+                            <div class="project-img">
+                                <img src="images/projects/autofeeder-improvement.png">
+                            </div>
+                            <div class="project-img-caption">
+                                <p>
+                                    High-Fidelity Prototype of Autofeeder for Testing
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-panel">
+                    <div class="project-row">
+                        <div class="project-col-1">
+                            <h3>Composites Composites Composites!</h3>
+                            <h4>Overview:</h4>
+                            <p>
+                                In Illini Solar Car, we use composites to make any part we can! The goal is to make components with a high stiffness-to-weight ratio. 
+                                I've gotten all kinds of experience by working with composites - design, analysis, testing, layups. 
+                                Whenever I do research about composites I end up in 20 different rabbit holes which always reminds me there's so much to learn :)
+                            </p>
+                            <h4>Skills Used:</h4>
+                            <p>Hand Calcs (Solid Mechanics, Impact Analysis), Mold Design, Assembly and Post-Processing, Layups, ANSYS Composite Analysis, 
+                                Classical Laminate Theory (CLT), Testing - Instron, Force Gauge, ASTM Standards, Material Selection, Anisotropic Materials</p>
+                            <h4>Outcome:</h4>
+                            <p>Decreased composite chassis weight by 30% from previous generation. 
+                                Researched and documented ASTM testing procedure for future generations.
+                                Performed shear, bending and tensile tests on 50+ coupons to maximize stiffness-to-weight ratio of final laminate.
+                            </p>
+                            <br>
+                            <a href="#" class="learn-more">Learn More!</a>
+                        </div>
+                        <div class="project-col-2">
+                            <div class="project-img">
+                                <img src="images/projects/composites.png">
+                            </div>
+                            <div class="project-img-caption">
+                                <p>
+                                    Composite Aero-Shell Being Analyzed in ANSYS.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-panel">
+                    <div class="project-row">
+                        <div class="project-col-1">
+                            <h3>Manual Transmission RC Car</h3>
+                            <h4>Overview:</h4>
+                            <p>
+                                This was another project for our mechanical design class. We had to create an RC Car (without steering) that could shift gears with just 1 servo.
+                                I first determined the gear ratios required, then performed stress analysis on the gear teeth, and lastly designed the shifting mechanism using a barrel cam.
+                                We needed a low speed (high torque), high speed and reverse gear to complete all the challenges.
+                            </p>
+                            <h4>Skills Used:</h4>
+                            <p>Hand Calcs (Stress Analysis), Drivetrain Design, Mechanisms, Electronics - Arduino, Motor, Motor Driver, IR Remote and Sensor</p>
+                            <h4>Outcome:</h4>
+                            <p>
+                                Lifted 4.5 kg up a 20 degree incline (2 kg was the requirement). Met the speed requirement. 
+                                The shifter was unreliable so we only got half points for the shifting challenge.
+                            </p>
+                            <br>
+                            <a href="#" class="learn-more">Learn More!</a>
+                        </div>
+                        <div class="project-col-2">
+                            <div class="project-img">
+                                <img src="images/projects/manual-transmission-car.png">
+                            </div>
+                            <div class="project-img-caption">
+                                <p>
+                                    Final Car Assembled!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-panel">
+                    <div class="project-row">
+                        <div class="project-col-1">
+                            <h3>Strider - Inclined Walker Robot</h3>
+                            <h4>Overview:</h4>
+                            <p>
+                                This was a project for our mechanical design class. I was heavily involved in all aspects of the project - linkage design, gear-train design, fabrication, and assembly.
+                                The goal for this project was to create an robot that can walk up a 30 degree slope on grassy/muddy terrain at a minimum speed of 4 m/min.
+                            </p>
+                            <h4>Skills Used:</h4>
+                            <p>Linkage Design, Position, Velocity, Acceleration (PVA) Analysis in Python, 3-D Printing, Laser Cutting, Gear-Train Design, Root Cause Analysis</p>
+                            <h4>Outcome:</h4>
+                            <p>
+                                18 m/min speed achieved. Optimized gear ratio to maximize speed.
+                            </p>
+                            <br>
+                            <a href="#" class="learn-more">Learn More!</a>
+                        </div>
+                        <div class="project-col-2">
+                            <div class="project-img">
+                                <img src="images/projects/strider.png">
+                            </div>
+                            <div class="project-img-caption">
+                                <p>
+                                    Walker Linkage Design
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-panel">
+                    <div class="project-row">
+                        <div class="project-col-1">
+                            <h3>Machining</h3>
+                            <h4>Overview:</h4>
+                            <p>
+                                I was trained on the welder, manual lathe, mill, bandsaws and a bunch of other tools in our workspace.
+                                Since we didn't have access to CNC training on our campus I never formally got trained but I love watching
+                                videos of parts being machined! I've machined a few parts in my career and my experiences help drive design decisions.
+                            </p>
+                            <h4>Skills Used:</h4>
+                            <p>
+                                Engineering Drawings, GD&T, Machining
+                            </p>
+                            <h4>Outcome:</h4>
+                            <p>
+                                Machined 100+ cylindrical sleeves for composite layup by streamlining machining process. Machined 30+ potted inserts
+                                and taught new generation. Machined thread adapters, brackets and a couple other fun parts during training.
+                            </p>
+                            <br>
+                            <a href="#" class="learn-more">Learn More!</a>
+                        </div>
+                        <div class="project-col-2">
+                            <div class="project-img">
+                                <img src="images/projects/inserts.png">
+                            </div>
+                            <div class="project-img-caption">
+                                <p>
+                                    Custom Potted Inserts with Glue Holes
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="footer">
+        </div>
+        <div id="footer">
                 <div class="col-1">
                     <h3>Pallab Layak</h3>
                     <p>University of Illinois at Urbana-Champaign</p>
-                    <p>Class of 2026</p>
+                    <p>Class of December 2025</p>
                     <p>Mechanical Science and Engineering</p>
                 </div>
                 <div class="col-2">
@@ -51,7 +257,6 @@
                     <p>LinkedIn: <a href="https://www.linkedin.com/in/pallab-layak/" class="footer-links">https://www.linkedin.com/in/pallab-layak/</a></p>
                     <p>GitHub: <a href="https://github.com/playak2" class="footer-links">https://github.com/playak2</a></p>
                 </div>
-            </div>
-        </main>
+        </div>
     </body>
 </html>
