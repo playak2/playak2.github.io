@@ -154,6 +154,12 @@ nav ul li a:hover{
     line-height: 1.5em;
 }
 
+.project-col-1 a{
+    font-size: 20px;
+    color: white;
+}
+
+
 .project-col-1 ul{
     margin-left: 20px;
     font-size: 20px;
@@ -163,26 +169,10 @@ nav ul li a:hover{
     margin-bottom: 10px;
 }
 
-.project-col-1 a{
-    font-size: 25px;
-    background-color: orange;
-    color: black;
-    font-weight: bold;
-    padding: 10px;
-    border-radius: 5px;
-}
 
 .project-col-1 a:visited{
-    font-size: 25px;
-    color: black;
-    font-weight: bold;
-}
-
-.project-col-1 a:hover{
-    font-size: 25px;
+    font-size: 20px;
     color: white;
-    background-color: red;
-    transition: 0.2s ease-in-out;
 }
 
 .project-col-2{
@@ -227,6 +217,11 @@ nav ul li a:hover{
     text-align: center;
 }
 
+.about-heading a{
+    font-size: 25px;
+    color: white;
+}
+
 #embedded-pdf{
     padding-top: 80px;
     text-align: center;
@@ -244,6 +239,7 @@ nav ul li a:hover{
 .footer-links{
     color: blue;
 }
+
 
 @keyframes fadeUp {
     from {
