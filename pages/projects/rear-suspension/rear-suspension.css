@@ -1,0 +1,51 @@
+#section-1{
+    padding-top: 10vh;
+    padding-bottom: 5vh;
+}
+
+h2{
+    padding-bottom: 15px;
+    font-size: 30px;
+    color: orange;
+}
+h3{
+    padding-bottom: 12px;
+    color: lightblue;
+    font-size: 25px;
+}
+
+.sec-1-row{
+    display: flex;
+    direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.sec-1-col-1{
+    flex-basis: 50%;
+}
+.sec-1-col-1 p{
+    font-size: 19px;
+    line-height: 2em;
+}
+
+.sec-1-col-1 ol{
+    padding-left: 18px;
+}
+.sec-1-col-1 ol li{
+    font-size: 19px;
+    line-height: 2em;
+    padding-bottom: 8px;
+}
+
+.sec-1-col-2{
+    flex-basis: 46%;
+}
+
+.sec-1-col-2 img{
+    width: 100%;
+    height: auto;
+    border-radius: 5%;
+}
+
+
